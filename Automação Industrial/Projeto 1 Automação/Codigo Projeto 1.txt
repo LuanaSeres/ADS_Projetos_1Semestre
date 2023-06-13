@@ -1,0 +1,81 @@
+//nomeando o pono do led
+//int LED = 8;
+//int btn = 7;
+
+//configuração
+//void setup(){
+  //pinMode(LED,OUTPUT); //configurando o pino do led como saida
+  //pinMode(btn,INPUT_PULLUP); //pino do btn como entrada em nivel alto
+//}
+
+//onde o programa vai ficar rodando
+//void loop(){
+  //if(digitalRead(btn)==LOW){
+    //digitalWrite(LED,HIGH);
+    //delay(500);
+    //digitalWrite(LED,LOW);
+    //delay(500);
+  //}else{
+    //digitalWrite(LED,LOW);
+  //}
+//}
+
+
+//int LED = 8;
+//int btn = 7;
+//int contador = 0;
+
+//void setup(){
+  //pinMode(LED,OUTPUT);
+  //pinMode(btn,INPUT_PULLUP);
+  //Serial.begin(9600);
+//}
+
+//void loop(){
+  //if(digitalRead(btn)==LOW){
+    //while(digitalRead(btn)==LOW);
+    //Serial.println(contador);
+    //contador++;
+  //}
+//}
+
+//int LED = 8;
+//int btn = 7;
+//int contador = 0;
+
+//void setup(){
+  //pinMode(LED,OUTPUT);
+  //pinMode(btn,INPUT_PULLUP);
+  //Serial.begin(9600);
+//}
+
+//void loop(){
+  //if(digitalRead(btn)==LOW){
+    //while(digitalRead(btn)==LOW);
+    //Serial.println(contador);
+    //contador++;
+  //}
+  //if(contador%2==0)
+    //digitalWrite(LED,LOW);
+  //else
+    //digitalWrite(LED,HIGH);
+//}
+
+
+int LED = 8;
+int btn = 7;
+bool status = false;
+
+void setup(){
+  pinMode(LED,OUTPUT);
+  pinMode(btn,INPUT_PULLUP);
+  Serial.begin(9600);
+}
+
+void loop(){
+  if(digitalRead(btn)==LOW){
+    while(digitalRead(btn)==LOW);
+    digitalWrite(LED,status);
+    status = !status;
+  }
+}

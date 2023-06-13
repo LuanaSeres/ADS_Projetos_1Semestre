@@ -1,0 +1,46 @@
+int trigger = 3;
+int echo = 2;
+
+int t0, t;
+float d_mm;
+
+
+void setup(){
+  pinMode(trigger,OUTPUT);
+  pinMode(echo,INPUT);
+  Serial.begin(9600);
+}
+
+void loop(){
+ d_mm = medirDistancia();
+  if(d_mm<3000 && d_mm>50){
+   Serial.print("Distancia = ");
+   Serial.print(d_mm);
+   Serial.println(" mm");
+   Serial.print("Distancia = ");
+   Serial.print(d_mm/25.4);
+   Serial.println(" inch");
+  }else{
+    Serial.println("Erro de leitura!");
+  }
+ delay(1000);
+}
+
+float medirDistancia(){
+  digitalWrite(trigger,LOW);
+  delayMicroseconds(5);
+  
+  digitalWrite(trigger,HIGH);
+  delayMicroseconds(10);
+  
+  digitalWrite(trigger,LOW);
+  
+  while(digitalRead(echo)!=HIGH);
+  
+  t0 = micros();
+  
+  while(digitalRead(echo)!=LOW);
+  t = micros()-t0;
+  
+  return 0.332*t/2;
+}

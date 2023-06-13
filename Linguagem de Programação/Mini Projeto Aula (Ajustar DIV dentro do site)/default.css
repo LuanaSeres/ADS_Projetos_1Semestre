@@ -1,0 +1,53 @@
+body{
+    margin: 0px;
+}
+
+@media screen (min-width: 800px){
+    .header{
+        display: none;
+    }
+}
+
+.header{
+    position: fixed;
+    top: 0px;
+    height: 50px;
+    width: 100%;
+    background-color: #00557f;
+    text-align: center;
+}
+
+.header h1{
+    font-size: 30px;
+    line-height: 8px;
+    color: #FFFFFF;
+}
+
+.nav{
+    position: fixed;
+    float: left;
+    margin-top: 55px;
+    width: 150px;
+    background-color: #a2a232;
+    height: calc(100vh - 80px);
+    /*
+        vh - viewport height
+        vw - viewport width
+    */
+}
+
+.content{
+    margin-top: 55px;
+    float: right;
+    width: calc(100vw - 230px);
+}
+
+.footer{
+    position: fixed;
+    bottom: 0px;
+    height: 50px;
+    width: 100%;
+    background-color: #00557f;
+    text-align: center;
+}
+

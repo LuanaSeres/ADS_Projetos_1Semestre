@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cálculo de Folha de Pagamento</title>
+
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Cálculo de Folha de Pagamento</h1>
+        </header>
+        <main>
+            <section class="caixa-1">
+                <form>
+                    <label for="salario">Salário Bruto</label>
+                    <input type="text" name="salario" id="salario" value=""/>
+
+                    <label for="dependentes">Dependentes</label>
+                    <input type="text" name="dependentes" id="dependentes"/>
+                    
+                    <div class="vale">
+                    <input type= "checkbox" name="checkbox" id="checkbox" checked/>
+                    <label for="checkbox">Vale Transporte</label>
+                    </div>
+
+                    <input id="botao1" type="button" value="Calcular"/>
+                </form>
+            </section>
+
+            <section class="caixa2" id="visivel">
+                <div id="result">
+                    <span>Resultado:</span>
+                    <span id="tabelinha">
+                        
+                    </span>
+                    <br>
+                    <input id="botao2" type="submit" onClick="window.location.href=window.location.href" value="Resetar">
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <span>Todos os direitos reservados &copy; - Site zika das galáxias</span>
+        </footer>
+    </body>
+    <script src="./js/Script.js"></script>
+</html>

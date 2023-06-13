@@ -1,0 +1,83 @@
+int greenA = 6;
+int yellowA = 5;
+int redA = 4;
+int greenS = 7;
+int redS = 3;
+int greenB = 2;
+int yellowB = 1;
+int redB = 0;
+int btn = 8;
+int i = 0;
+
+
+void setup()
+{
+  pinMode(greenA, OUTPUT);
+  pinMode(yellowA, OUTPUT);
+  pinMode(redA, OUTPUT);
+  pinMode(greenS, OUTPUT);
+  pinMode(redS, OUTPUT);
+  pinMode(greenB, OUTPUT);
+  pinMode(yellowB, OUTPUT);
+  pinMode(redB, OUTPUT);
+  pinMode(btn, INPUT_PULLUP);
+  
+  
+  digitalWrite(redA,HIGH);
+  digitalWrite(redB,HIGH);
+  digitalWrite(redS,HIGH);
+  digitalWrite(btn, HIGH);
+  
+}
+
+void loop(){
+  while(digitalRead(btn) == LOW){
+     for(i=0;i<=4;i++){
+       rua1();
+       rua2();
+      }
+ 	  delay(500);
+ 	  pedestre(); 
+   }
+  while(digitalRead(btn) == HIGH){
+     pedestre();
+   }
+}
+
+               
+void rua1(){
+   digitalWrite(redA,LOW);
+   digitalWrite(greenA, HIGH);
+   delay(2000); 
+   digitalWrite(greenA, LOW);
+   digitalWrite(yellowA, HIGH);
+   delay(500);
+   digitalWrite(yellowA, LOW);
+   digitalWrite(redA, HIGH);
+  }
+
+               
+void rua2(){
+   digitalWrite(redB,LOW);
+   digitalWrite(greenB, HIGH);
+   delay(2000); 
+   digitalWrite(greenB, LOW);
+   digitalWrite(yellowB, HIGH);
+   delay(500);
+   digitalWrite(yellowB, LOW);
+   digitalWrite(redB, HIGH);
+}
+
+void pedestre(){
+  digitalWrite(redS,LOW);
+  digitalWrite(redA,HIGH);
+  digitalWrite(yellowA,LOW);
+  digitalWrite(greenA,LOW);
+  digitalWrite(redB,HIGH);
+  digitalWrite(yellowB,LOW);
+  digitalWrite(greenB,LOW);
+  digitalWrite(greenS,HIGH);
+  delay(4000);
+  digitalWrite(redS, HIGH);
+  digitalWrite(greenS,LOW);
+}

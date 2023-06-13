@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML5</title>
+
+        <link rel="stylesheet" href="./CSS/style.css">
+    </head>
+    <body>
+        <header>    
+            <nav>
+                <ul>
+                    <li><a>Início</a></li>
+                    <li><a>Sobre</a></li>
+                    <li><a>Linguagens</a></li>
+                    <li><a>Contato</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="inicio">
+                <h1>Seja bem-vindo!</h1>
+                <p>Aqui você encontrará informações sobre o uso de HTML5 semântico para desenvolimento web.</p>
+            </section>
+
+            <div class="pt1">
+                <div class="pt2">
+                    <section id="sobre">
+                        <h2 class="titulo-caixa">Sobre o HTML5 Semântico</h2>
+                        <p class="paragrafo-caixa">O HTML5 semântico é uma evolução da línguagem HTML que permite aos desenvolvedores criar estruturas mais significativas e ricas em conteúdo para seus sites e aplicativos.</p>
+                    </section>
+
+                    <section id="linguagens">
+                        <h2>Outras línguagens associadas</h2>
+                        <ul>
+                            <li>HiperText Markup Linguage - HTML</li>
+                            <li>Cascading Style Sheet - CSS</li>
+                            <li>JavaScript - JS</li>
+                        </ul>
+                        <img class="imagem" src="">
+                    </section>
+                </div>
+                <section id="contato">
+                    <h2 class="fale">Fale conosco</h2>
+                    <form>
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome" id="nome" placeholder="Nome e sobrenome">
+
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" placeholder="prefixo@sulfixo.com">
+
+                        <label for="menssagem">Menssagem</label>
+                        <textarea name="menssagem" id="menssagem" rows="4"></textarea>
+
+                        <div>
+                            <input type="checkbox" name="checkbox" id="checkbox" checked>
+                            <label for="checkbox">Desejo receber informações sobre HTML5 por e-mail.</label>
+                        </div>
+                        <input id="botao" type="submit" value="Enviar">
+                    </form>
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <p>Todos os direitos reservados - Site HTML5</p>
+        </footer>
+    </body>
+</html>

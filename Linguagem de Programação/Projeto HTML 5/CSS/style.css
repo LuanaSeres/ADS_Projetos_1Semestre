@@ -1,0 +1,152 @@
+    *{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    color: rgb(255, 255, 255);
+    background-image: url(../img/textura.jpg);
+    font-family: monospace ;
+}
+
+header{
+    box-shadow: -5px 10px 15px rgb(102, 135, 242);
+    background-color: #0D2570; 
+    padding: 10px;
+    align-items: center;
+}
+
+header li {
+    transition: 0.3s;
+}
+
+header li:hover {
+    font-size: 20px;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style: none;
+}
+
+main {
+    background-image: linear-gradient(to right, rgba(47, 62, 112, 0.7), rgba(13, 38, 112, 0.5), rgba(47, 62, 112, 0.7));
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+#inicio h1 {
+    font-size: 30px ;
+    text-align: center;
+    margin: 10px 0 0 0
+}
+
+#inicio p {
+    font-size: px;
+}
+
+#sobre {
+    padding: 30px;
+    margin: 50px 400px 50px 400px;
+    background-color: darkblue;
+    box-shadow: 5px 5px 5px blue;
+}
+
+#sobre:hover {
+    box-shadow: 10px 10px 20px blue;
+}
+
+.titulo-caixa {
+    margin: 0 0 30px 0;
+    text-align: center;
+    font-size: 25px;
+}
+
+.paragrafo-caixa {
+    font-size: 13px;
+    margin: 0 100px 0 0;
+    text-align: justify;
+}
+
+#linguagens:hover{
+    transition: 2s;
+    opacity: 1;
+}
+
+#linguagens{
+   line-height: 30px;
+   opacity: 0;
+   padding: 30px 30px 0 30px;
+   width: 420px;
+   box-shadow: inset 5px 5px 50px blue;
+   background-color: rgba(0, 0, 0, 0.598);
+}
+
+#linguagens h2{
+    text-align: center;
+}
+
+#linguagens ul{
+    margin-top: 20px;
+    list-style: none;
+}
+
+.fale {
+    text-align: center;
+    margin: 0 0 20px 0 ;
+}
+
+#contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 300px;
+}
+
+#contato div {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+#nome{
+    height: 30px;
+    border-radius: 5px;
+    border-color: white;
+}
+
+#email{
+    height: 30px;
+    border-radius: 5px;
+    border-color: white;
+}
+
+#menssagem{
+    border-radius: 5px;
+}
+
+#botao{
+    height: 30px;
+    width: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(28, 225, 34);
+    border-radius: 20px ;
+    border-color: rgb(28, 225, 34);
+    font-family: monospace;
+    color: white;
+}
+
+footer {
+    box-shadow: -10px -5px 15px rgb(102, 135, 242);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #0D2570;
+    padding: 20px;
+}

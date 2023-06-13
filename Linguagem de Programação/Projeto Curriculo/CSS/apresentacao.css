@@ -1,0 +1,27 @@
+.imagem{
+    display: flex;
+    height: 250px;
+    width: 250px;
+    margin-left: 30px;
+}
+
+.texto{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.ap{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 10px;
+}
+
+.fundo{
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    height: 535px;
+    width: 1242px;
+}
+
+body{
+    background-color: violet;
+}
